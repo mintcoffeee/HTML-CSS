@@ -2,29 +2,29 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Exam02 here</title>
 </head>
 <body>
+
 <h1 id="hello"></h1>
 
+<!-- CDM 방식: 서버에서 직접 가져오는 방식 -->
 <script type="text/javascript" src="http://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script type="text/javascript">
-function hello($){
-	var h1 = $('#hello')
-	h1.html('Hello jQuery')
-	h1.text('Hello jQuery')
+function hello($){ // $객체로 $함수 호출
+	var h1 = $('#hello');
+	// var h1 = document.getElementById("hello");
+	h1.html('Hello jQuery');
+	// h1.innerHTML = 'Hello jQuery';
+	h1.text('Hello World');
+	// h1.innerText = 'Hello World';
 }
 
-jQuery(hello);
+jQuery(hello); // hello() 호출
+
+
 </script>
+
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-
